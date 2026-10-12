@@ -1,0 +1,22 @@
+﻿TELECOM STREAMING PIPELINE
+FINAL VALIDATION REPORT
+Date: 2026-10-12
+
+Bronze Events: 1000000
+Silver Events: 1000000
+Quarantine Events: 0
+
+Unique Event IDs: 1000000
+Duplicate Events: 0
+Quality Flagged Events: 75543
+
+Bronze - (Silver + Quarantine): 0
+
+RESULT: PASS
+
+Notes:
+- All 1,000,000 Silver event IDs are unique.
+- No duplicate events detected.
+- 75,543 events contain quality flags.
+- No events were written to Quarantine.
+- Row-count reconciliation passed.

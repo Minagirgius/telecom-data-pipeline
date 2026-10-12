@@ -1,0 +1,7 @@
+FROM apache/spark:3.5.7
+
+USER root
+
+RUN pip install --no-cache-dir PyYAML==6.0.2
+
+WORKDIR /opt/telecom

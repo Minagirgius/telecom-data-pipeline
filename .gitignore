@@ -1,0 +1,80 @@
+# ==================================
+# Python
+# ==================================
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# ==================================
+# Environment & Secrets
+# ==================================
+.env
+.env.*
+!.env.example
+.secrets/
+*.pem
+*.key
+
+# ==================================
+# Spark Streaming Data
+# ==================================
+data/processed/
+data/checkpoints/
+*.parquet
+
+# Large datasets
+data/**/*.csv
+
+# ==================================
+# Spark Temporary Files
+# ==================================
+.sparkStaging/
+spark-warehouse/
+metastore_db/
+_metastore_db/
+*.crc
+
+# ==================================
+# Logs & Temporary Files
+# ==================================
+logs/
+*.log
+
+# ==================================
+# Airflow & dbt
+# ==================================
+.airflow/
+target/
+dbt_packages/
+
+# ==================================
+# IDE
+# ==================================
+.vscode/
+.idea/
+
+# ==================================
+# OS
+# ==================================
+.DS_Store
+Thumbs.db
+# ==================================
+# Streaming Backups and Test Artifacts
+# ==================================
+data/backups/
+data/tests/
+
+# ==================================
+# Large Input Datasets
+# ==================================
+src/telecom_pipeline/ingestion/batch/*.csv
+
+# ==================================
+# Spark State and Temporary Files
+# ==================================
+*.delta
+*.snapshot
+*.tmp
+azure_upload_test.txt
